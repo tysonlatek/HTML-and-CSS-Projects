@@ -1,0 +1,6 @@
+ol {
+	list-style-type: lower-roman; /*changes the appearance of the numbers in an ordered list to lowercase roman numerals*/
+}
+ul {
+	list-style-type: circle; /*changes the appearance of the bullet points in an unordered list to open circle bullet points*/
+}
