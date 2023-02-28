@@ -3,9 +3,10 @@ body{
     font-size: 15px;
 }
 
-form{
+input{
     width: auto;
-    margin: auto;
-    border: auto;
-    border-radius: 5px;
+    margin: 10px;
+    border-left: 2px solid lightseagreen;
+    border-right: 2px solid lightpink;
+    border-radius: 8px;
 }
