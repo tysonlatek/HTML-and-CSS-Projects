@@ -1,0 +1,11 @@
+body{
+    font-family: monospace;
+    font-size: 15px;
+}
+
+form{
+    width: auto;
+    margin: auto;
+    border: auto;
+    border-radius: 5px;
+}
