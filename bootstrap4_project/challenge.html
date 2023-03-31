@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Poke Balls</title>
+        <style>
+            .navbar {
+                overflow: hidden;
+                background-color: mediumspringgreen;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 17px;
+            }
+            .navbar a:hover {
+                background-color: violet;
+                color: blueviolet;
+            }
+            .main {
+                padding: 16px;
+                margin-top: 30px;
+                height: 25px;
+            }
+            p:hover {
+                color: lime;
+                background-color: rebeccapurple;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 30%;
+                filter: invert(100%);
+                border-radius: 100px 50px;
+            }
+            .container {
+                position: relative;
+                text-align: center;
+                color: yellow;
+            }
+            .image_text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                font-weight: bold;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: darkblue;
+            }
+            .image_text:hover {
+                opacity: 1;
+            }
+            .video_text {
+                position: absolute;
+                top: 37.5%;
+                left: 37.5%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                opacity: 1;
+                transition: .5s ease;
+                background-color: plum;
+            }
+            table, th, td {
+                border: 2px solid gray;
+                padding: 15px;
+            }
+            .column {
+                float: left;
+                color: red;
+                width: 50%;
+                height: 50px;
+                background-color: antiquewhite;
+                flex: 50%;
+            }
+            .row {
+                display: flex;
+            }
+            footer {
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="main">
+            <h1>Poke Balls</h1>
+            <p>There are many different types of Poke Balls!</p>
+        </div>
+        <div class="container">
+            <img src="Poke_Ball.jpg" alt="Inverted colored Poke Ball">
+            <div class="image_text">Go!</div>
+        </div>
+        <div class="container">
+            <video width="300" height="150" controls autoplay muted loop>
+                <source src="pexels-roman-odintsov-6897895.mp4" type="video/mp4">
+                Error...
+            </video>
+            <div class="video_text">Eggs!</div>
+        </div>
+        <h2>Types of Poke Balls</h2>
+        <table style="width: 100%">
+            <tr style="background-color: aqua">
+                <th>Standard Poke Balls</th>
+                <th>Other Poke Balls</th>
+            </tr>
+            <tr>
+                <td>Poke Ball</td>
+                <td>Heal Ball</td>
+            </tr>
+            <tr>
+                <td>Great Ball</td>
+                <td>Repeat Ball</td>
+            </tr>
+            <tr>
+                <td>Ultra Ball</td>
+                <td>Net Ball</td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="column">Col 1</div>
+            <div class="column">Col 2</div>
+        </div>
+        <p>Thanks for visiting our website!</p>
+        <div class="contact">
+            <footer>
+                <label>www.pokeballs.com</label>
+            </footer>
+        </div>
+    </body>
+</html>

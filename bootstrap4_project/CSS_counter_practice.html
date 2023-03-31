@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS counter practice</title>
+        <style>
+            body {
+            counter-reset: int;
+            }
+
+            h2::before {
+            counter-increment: int;
+            content: counter(int) ". ";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ABC</h1>
+        <h2>DEF</h2>
+        <h2>GHI</h2>
+        <h2>JKL</h2>
+        <h2>MNO</h2>
+        <h2>PQR</h2>
+    </body>
+</html>
