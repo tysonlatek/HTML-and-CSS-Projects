@@ -27,12 +27,69 @@
 		<section>
 			<div id="gallery">
 				<h1>Gallery</h1>
-				<img src="Turtle.jfif" width="300" height="200" alt="Black wood turtle">
-				<img src="Cat.jpg" width="190" height="200" alt="Cat">
-				<img src="Dog.jpg" width="200" height="200" alt="Dog">
+				<img src="turtle.jfif" width="30%" height="200px" alt="Black wood turtle">
+				<img src="cat.jpg" width="30%" height="200px" alt="Orange cat">
+				<img src="dog.jpg" width="30%" height="200px" alt="Brown dog">
+
+				<!-- Images used to open the lightbox -->
+				<div class="row">
+					<div class="column">
+						<img src="plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+					</div>
+					<div class="column">
+						<img src="plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+					</div>
+				</div>
+	
+				<!-- The Modal/Lightbox -->
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+	
+						<div class="myslides">
+							<div class="numbertext">1 / 3</div>
+							<img src="plant1.png" style="width: 100%">
+						</div>
+	
+						<div class="myslides">
+							<div class="numbertext">2 / 3</div>
+							<img src="plant2.png" style="width: 100%">
+						</div>
+	
+						<div class="myslides">
+							<div class="numbertext">3 / 3</div>
+							<img src="plant3.png" style="width: 100%">
+						</div>
+	
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+	
+						<!-- Thumbnail image controls -->
+						<div class="column">
+							<img class="demo" src="plant1-small.png" onclick="currentSlide(1)" alt="Pink flowers">
+						</div>
+	
+						<div class="column">
+							<img class="demo" src="plant2-small.png" onclick="currentSlide(2)" alt="Sunflowers">
+						</div>
+	
+						<div class="column">
+							<img class="demo" src="plant3-small.png" onclick="currentSlide(3)" alt="Succulents">
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		
+
 		<!-- CONTACT -->
 		<section>
 			<div id="contact">
@@ -74,5 +131,6 @@
 				</p>
 			</footer>
 		</div>
+		<script src="JS/one_page_website.js"></script>
 	</body>
 </html>
